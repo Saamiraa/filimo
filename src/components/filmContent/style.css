@@ -1,0 +1,32 @@
+.film-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.film-content ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.film-content ul li {
+    width: calc(100%/6);
+    padding: 0 5px;
+    position: relative;
+}
+
+.film-content ul li img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+.film-content ul li .free-badge {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: green;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+}

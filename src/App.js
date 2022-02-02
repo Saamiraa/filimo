@@ -1,25 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import samira from './utils';
+import FilmContent from './components/filmContent';
+import {freeMovies} from './data'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+    <FilmContent list={freeMovies} title="فیلم و سریال های رایگان" subtitle="تماشای بدون اشتراک" description="برای تماشا، فقط ثبت نام کنید و بدون نیاز به خرید اشتراک، رایگان تماشا کنید"/>  
+    <p/>
     </div>
-  );
+  )
 }
-
 export default App;
